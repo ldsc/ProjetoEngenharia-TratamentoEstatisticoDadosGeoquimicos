@@ -1,0 +1,10 @@
+O menor valor testado com um nivel de significancia de 0.05 nao e considerado um outlier
+O valor calculado e 0.145833
+O valor critico tabelado para esse valor de significancia e 0.554
+O menor valor foi mantido: 0.66
+
+O maior valor testado com um nivel de significancia de 0.05 nao e considerado um outlier
+O valor calculado e 0.378788
+O valor critico tabelado para esse valor de significancia e 0.554
+O maior valor foi mantido: 0.733
+

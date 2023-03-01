@@ -1,0 +1,3 @@
+O grupo 2 apresenta variancia nao homogenea com os demais grupos
+O valor de C calculado e 0.864662
+O valor critico tabelado para o nivel de significancia = 0.05 e 0.6287

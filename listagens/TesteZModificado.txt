@@ -1,0 +1,2 @@
+Considera-se como outlier o seguinte dado: 8.1, que tem como Zmod: 16.188
+Considera-se como outlier o seguinte dado: 9.2, que tem como Zmod: 19.8978

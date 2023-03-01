@@ -1,0 +1,13 @@
+Pontos
+(30, 430)
+(21, 335)
+(35, 520)
+(42, 490)
+(37, 470)
+(20, 210)
+(8, 195)
+(17, 270)
+(35, 400)
+(25, 480)
+O coeficiente do ajuste da regressao e: 0.967796
+A equacao obtida com a regressao linear e: f(x) = 9.73814*x + (117.07)

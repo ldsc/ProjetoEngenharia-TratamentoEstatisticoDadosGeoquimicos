@@ -1,0 +1,6 @@
+
+Teste de Hipotese Unicaudal a Direita realizado com sucesso!
+
+	tcalc = 5.75298
+
+	Valor tabelado de t para phi = 19 e alpha = 0.05: 1.7291

@@ -1,0 +1,3 @@
+O valor testado com o nivel de significancia = 0.05 e considerado outlier.
+O valor do teste calculado e 2.5231
+O valor critico tabelado e 2.409

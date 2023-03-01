@@ -1,0 +1,3 @@
+O dado testado nao e considerado um outlier
+O valor do teste calculado e 0.564103
+O valor critico tabelado para alpha = 0.05 e n = 7 e 0.59

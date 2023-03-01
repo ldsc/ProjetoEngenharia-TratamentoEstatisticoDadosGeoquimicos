@@ -1,0 +1,8 @@
+
+Teste Bicaudal Realizado com sucesso!
+
+	Zcalc = 4.74342
+
+	Valor tabelado de Z para (1 - alpha/2) = 0.975: 1.79654
+
+	Valor tabelado de Z para alpha/2 = 0.025: -1.79654
