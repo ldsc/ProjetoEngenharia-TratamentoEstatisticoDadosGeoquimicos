@@ -1,0 +1,1236 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Teste
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Teste"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter-Teste} 
+\backslash
+rhead{
+\backslash
+thepage} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Neste capítulo iremos apresentar a execução dos programas.
+\end_layout
+
+\begin_layout Section
+Teste 1: Descrição
+\end_layout
+
+\begin_layout Standard
+As Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-RegressaoLinear"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TesteGrafico"
+
+\end_inset
+
+ mostram a execução classe CRegressaoLinear , onde o usuário escolhe a opção
+ de realizar a regressão linear e em seguida entra com os pares de dados
+ ( variável independente e variável dependente).
+ Com o comando 
+\begin_inset Formula $ctrl+d$
+\end_inset
+
+ no GNU/Linux ou 
+\begin_inset Formula $ctrl+z$
+\end_inset
+
+ no Windows, o usuário encerra a entrada de dados e obtém o coeficiente
+ do ajuste da regressão, a equação da reta e o gráfico da reta com os pontos
+ inseridos inicialmente.
+ Exemplo extraído de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "exemplo_regressao"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/Teste/TesteRegressao.png
+	scale 35
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tela do programa mostrando a execução da classe CRegressaoLinear 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-RegressaoLinear"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../imagens/Teste/Grafico.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tela do programa mostrando o gráfico obtido pela classe CRegressaoLinear
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TesteGrafico"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CRegressaoLinear}
+\end_layout
+
+\end_inset
+
+ o arquivo gerado pela classe CRegressaoLinear.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo gerado pela classe CRegresaoLinear.}, label={CR
+egressaoLinear},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/TesteRegressao.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 2: Descrição
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-Cochran1"
+
+\end_inset
+
+ mostra a sequência de execução da classe CTesteCochran onde, o usuário
+ entra a com a opção 
+\begin_inset Formula $1$
+\end_inset
+
+ para realizar os testes para identificação de 
+\shape italic
+outliers
+\shape default
+ e depois escolhe a opção 
+\begin_inset Formula $1$
+\end_inset
+
+ para realizar o teste de Cochran.
+ O usuário entra com o número de grupos e depois insere os dados e termina
+ a inserção dos mesmos com o comando 
+\begin_inset Formula $ctrl+d$
+\end_inset
+
+ no GNU/Linux ou 
+\begin_inset Formula $ctrl+z$
+\end_inset
+
+ no Windows.
+ O usuário escolhe o valor do nível de significância, o programa então calcula
+ a estatística do teste e a compara com o valor crítico tabelado específico
+ para o teste.
+ Em seguida, o programa apresenta a consideração final de que algum grupo
+ apresenta ou não, a variância não homogênea com os demais.
+ Exemplo extraído de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "exemplo_cochran"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/Teste/TesteCochran.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tela mostrando a execução da classe CTesteCochran
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-Cochran1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CTesteCochran}
+\end_layout
+
+\end_inset
+
+ o arquivo gerado pela classe CTesteCochran.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo gerado pela classe CTesteCochran.}, label={CTes
+teCochran},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/TesteCochran.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 3 : Descrição
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TesteZmodificado"
+
+\end_inset
+
+ mostra a sequência de execução do teste Z modificado, onde o usuário escolhe
+ a opção 
+\begin_inset Formula $1$
+\end_inset
+
+ para realizar os testes de identificação de 
+\shape italic
+outliers
+\shape default
+ e depois a opção 
+\begin_inset Formula $3$
+\end_inset
+
+ para realizar o teste Z modificado.
+ O usuário insere os dados e termina sua inserção com o comando 
+\begin_inset Formula $ctrl+d$
+\end_inset
+
+ no GNU/Linux ou 
+\begin_inset Formula $ctrl+z$
+\end_inset
+
+ no Windows.
+ O programa executa estatística do teste e compara para valores maiores
+ que 
+\begin_inset Formula $3$
+\end_inset
+
+, considerando os valores com magnitude maior que 
+\begin_inset Formula $3$
+\end_inset
+
+ como 
+\shape italic
+outlier
+\shape default
+.
+ Exemplo extraído de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Andriotti"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/Teste/TesteZmodificado.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tela mostrando a execução da classe CTesteZmodificado
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TesteZmodificado"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CTesteZmodificado}
+\end_layout
+
+\end_inset
+
+ o arquivo gerado pela classe CTesteZmodificado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo gerado pela classe CTesteZmodificado.},
+ label={CTesteZmodificado},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/TesteZModificado.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 4 : Descrição
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TesteDPdesconhecido"
+
+\end_inset
+
+ mostra a sequência de execução do teste de hipóteses com desvio padrão
+ desconhecido, onde o usuário escolhe a opção zero para execução do teste
+ de hipótese e depois a opção 
+\begin_inset Formula $1$
+\end_inset
+
+ para realizar o teste de hipóteses com desvio padrão conhecido.
+ O usuário insere os dados e termina inserção com o comando 
+\begin_inset Formula $ctrl+d$
+\end_inset
+
+ no GNU/Linux ou 
+\begin_inset Formula $ctrl+z$
+\end_inset
+
+ no Windows.
+ Depois o usuário escolhe o caso do teste.
+ O usuário entra com a hipótese nula e o programa executa a estatística
+ do teste e compara com o valor tabelado para considerar ou não a rejeição
+ da hipótese nula.
+ Exemplo extraído de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "exemploDPconhecido"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/Teste/TesteDPdesconhecido.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+tela mostrando a execução da classe CTesteHipoteseDPdesconhecido
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TesteDPdesconhecido"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CTesteHipoteseDPdesconhecido}
+\end_layout
+
+\end_inset
+
+ o arquivo gerado pela classe CTesteHipoteseDPdesconhecido.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo gerado pela classe CTesteHipoteseDPdesconhecid
+o.}, label={CTesteHipoteseDPdesconhecido},extendedchars=true,breaklines=true,basi
+cstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/TesteHipoteseDPdesconhecido.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 5 : Descrição
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TesteDPconhecido"
+
+\end_inset
+
+ mostra a sequência de execução de um teste de hipóteses com o desvio padrão
+ da população conhecido.
+ O usuário inicia escolhendo a opção zero para execução do teste de hipótese
+ e depois a opção 
+\begin_inset Formula $1$
+\end_inset
+
+ para realizar o teste de hipóteses com desvio padrão conhecido.
+ O usuário insere os dados e termina inserção com o comando 
+\begin_inset Formula $ctrl+d$
+\end_inset
+
+ no GNU/Linux o 
+\begin_inset Formula $ctrl+z$
+\end_inset
+
+ no Windows.
+ Depois, o usuário entra com o desvio padrão e escolhe o tipo do teste.
+ O usuário entra com a hipótese nula e o programa executa a estatística
+ do teste e compara com o valor tabelado para rejeição ou não da hipótese
+ nula.
+ Exemplo extraído de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "exemploDPconhecido"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/Teste/TesteDPconhecido.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tela mostrando a execução da Classe CTesteHipoteseDPconhecido
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TesteDPconhecido"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CTesteHipoteseDPconhecido}
+\end_layout
+
+\end_inset
+
+ o arquivo gerado pela classe CTesteHipoteseDPconhecido.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo gerado pela classe CTesteHipoteseDPconhecido.},
+ label={CTesteHipoteseDPconhecido},extendedchars=true,breaklines=true,basicstyle
+=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/TesteHipoteseDPconhecido.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 6 : Descrição
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TesteGrubbs"
+
+\end_inset
+
+ mostra a sequência de execução do teste de Grubbs.
+ Inicialmente, o usuário escolhe a opção 
+\begin_inset Formula $1$
+\end_inset
+
+ para realizar teste de identificação de 
+\shape italic
+outlier
+\shape default
+ e depois a opção 
+\begin_inset Formula $2$
+\end_inset
+
+ para execução do Teste de Grubbs.
+ O usuário entra com os dados e termina a inserção com 
+\begin_inset Formula $ctrl+d$
+\end_inset
+
+ no GNU/Linux ou 
+\begin_inset Formula $ctrl+z$
+\end_inset
+
+ no Windows.
+ Depois escolhe o nível de significância e escolhe se testará o menor ou
+ menor valor.
+ O programa executa a estatística do teste e compara com um valor crítico
+ tabelado e informa se o mesmo é ou não considerado um valor 
+\shape italic
+outlier
+\shape default
+.
+ Exemplo extraído de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Andriotti"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/Teste/TesteGrubbs.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tela do Programa mostrando a execução do Teste de Grubbs
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TesteGrubbs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CTesteGrubbs}
+\end_layout
+
+\end_inset
+
+ o arquivo gerado pela classe CTesteGrubbs.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo gerado pela classe CTesteGrubbs.}, label={CTest
+eGrubbs},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/TesteGrubbs.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 7: Descrição
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TesteDoerffel"
+
+\end_inset
+
+ mostra a execução da classe CTesteDoerffel.
+ O usuário escolhe a opção 
+\begin_inset Formula $1$
+\end_inset
+
+ para realizar testes 
+\shape italic
+outilers
+\shape default
+ e depois escolhe a opção 
+\begin_inset Formula $4$
+\end_inset
+
+ para realizar o Teste de Doerffel.
+ O usuário insere os dados e termina a sua inserção com o comando 
+\begin_inset Formula $ctrl+d$
+\end_inset
+
+ no GNU/Linux ou 
+\begin_inset Formula $ctrl+z$
+\end_inset
+
+ no Windows.
+ Depois o usuário entra com um valor suspeito, já inserido pelo mesmo nos
+ dados, e o programa executa a estatística do teste e compara com o valor
+ tabelado para concluir se o valor é considerado um 
+\shape italic
+outlier
+\shape default
+ ou não.
+ Exemplo extraído de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Andriotti"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/Teste/TesteDoerffel.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tela mostrando a execução da classe CTesteDoerffel
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TesteDoerffel"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CTesteDoerffel}
+\end_layout
+
+\end_inset
+
+ o arquivo gerado pela classe CTesteGrubbs.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo gerado pela classe CTesteDoerffel.}, label={CTe
+steDoerffel},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/TesteDoerffel.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 8: Descrição
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TesteDixon"
+
+\end_inset
+
+ mostra a execução da classe CTesteDixon.
+ Inicialmente, o usuário escolhe a opção um para realizar testes de identificaçã
+o de 
+\shape italic
+outliers
+\shape default
+ e depois seleciona a opção zero para executar o teste de Dixon.
+ O primeiro passo do cálculo é a escolha do nível de significância e depois
+ a inserção do grupo de dados.
+ O usuário encerra a entrada de dados com o comando 
+\begin_inset Formula $ctrl+d$
+\end_inset
+
+ no GNU/Linux ou 
+\begin_inset Formula $ctrl+z$
+\end_inset
+
+ no Windows.
+ Depois escolhe se testará o maior ou o menor valor e assim é calculada
+ a estatística do teste, comparada com o valor tabelado e concluído se é
+ ou não considerado um valor 
+\shape italic
+outilier
+\shape default
+.
+ Exemplo extraído de 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "exemploDixon"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/Teste/TesteDixon.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Tela do Programa mostrando a execução da classe CTesteDixon
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TesteDixon"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CTesteDixon}
+\end_layout
+
+\end_inset
+
+ o arquivo gerado pela classe CTesteDixon.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{language=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo gerado pela classe CTesteDixon.}, label={CTeste
+Dixon},extendedchars=true,breaklines=true,basicstyle=
+\backslash
+footnotesize
+\backslash
+tt] {../listagens/TesteDixon.txt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1691 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package default
+\inputencoding latin1
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+AOO
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+AOO
+\end_layout
+
+\end_inset
+
+ -- Análise Orientada a Objeto
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Análise orientada a objeto
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:AOO"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A terceira etapa do desenvolvimento de um sistema é a AOO -- Análise Orientada
+ a Objeto.
+ A AOO utiliza algumas regras para identificar os objetos de interesse,
+ as relações entre os pacotes, as classes, os atributos, os métodos, as
+ heranças, as associações, as agregações, as composições e as dependências.
+ 
+\end_layout
+
+\begin_layout Standard
+O modelo de análise deve ser conciso, simplificado e deve mostrar o que
+ deve ser feito, não se preocupando como isso será realizado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Itemize
+O modelo funcional (aspectos microdinâmicos, veja a seção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:AOO-Modelagem-funcional"
+
+\end_inset
+
+).
+ Gabriela: O que fazer com essa nota? Não ficou claro.
+ 
+\end_layout
+
+\begin_layout Itemize
+DESCONSIDERAR
+\end_layout
+
+\begin_layout Itemize
+algumas notas tem lembretes para mim mesmo.
+\end_layout
+
+\end_inset
+
+O resultado da análise é um conjunto de diagramas que identificam os objetos
+ e seus relacionamentos.
+\end_layout
+
+\begin_layout Section
+Diagramas de classes
+\end_layout
+
+\begin_layout Standard
+O diagrama de classes é apresentado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-classes"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/DiagramaClasse.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de classes.
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-classes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+deve ocupar toda a página impressa! se necessário rotacionar 90 graus
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os métodos get() e set() foram omitidos do diagrama visto que são obrigatórios
+ em linguagem de programação.
+ O mesmo ocorreu para os métodos construtores e destrutores, que também
+ foram omitidos por serem padrão da linguagem de programação orientada a
+ objeto.
+ Entretanto, todos eles foram implementados no código do programa.
+\end_layout
+
+\begin_layout Subsection
+Dicionário de classes
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Dicionário-de-classes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Classe CSolverRL: Classe que possui um método que calcula o somatório de
+ x, somatório de y, somatório de xy, somatório de 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+, somatório de 
+\begin_inset Formula $y^{2}$
+\end_inset
+
+ que serão utilizados pela classe CRegressaoLinear para o cálculo dos coeficient
+es a e b da equação da reta y = a + bx e o coeficiente de correlação linear.
+\end_layout
+
+\begin_layout Itemize
+Classe CRegressaoLinear: Classe representativa de uma equação que descreve
+ o relacionamento entre duas variáveis em termos matemáticos.
+\end_layout
+
+\begin_layout Itemize
+Classe CTesteZmodificado: Classe representativa de um teste realizado pra
+ identificar anomalias.
+\end_layout
+
+\begin_layout Itemize
+Classe CTesteDoerfeel: Classe representativa de um teste realizado pra identific
+ar anomalias.
+\end_layout
+
+\begin_layout Itemize
+Classe CTesteGrubbs: Classe representativa de um teste realizado pra identificar
+ anomalias (muito útil para testar variabilidade entre laboratórios).
+\end_layout
+
+\begin_layout Itemize
+Classe CTesteDixon: Classe representativa de um teste realizado pra identificar
+ anomalias (recomendado quando o número de observações está entre 3 e 25).
+\end_layout
+
+\begin_layout Itemize
+Classe CTesteCochran: Classe representativa de um teste realizado pra identifica
+r anomalias (recomendado para estudar a variabilidade interna de um laboratório).
+\end_layout
+
+\begin_layout Itemize
+Classe CEstatística: Classe representativa dos cálculos estatísticos básicos.
+\end_layout
+
+\begin_layout Itemize
+Classe CTesteHipotese: Classe representativa de um teste cujo objetivo é
+ verificar se os dados são compatíveis com alguma hipótese.
+\end_layout
+
+\begin_layout Itemize
+Classe CTesteHipoteseDPdesconhecido: Classe representativa de um teste cujo
+ objetivo é verificar se os dados são compatíveis com alguma hipótese.
+\end_layout
+
+\begin_layout Itemize
+Classe CTesteHipoteseDPconhecido: Classe representativa de um teste cujo
+ objetivo é verificar se os dados são compatíveis com alguma hipótese.
+\end_layout
+
+\begin_layout Section
+Dicionário de classes com atributos/métodos
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Dicionário-de-classes-atributos-metodos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Classe CSolver:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Atributos:
+\end_layout
+
+\begin_layout Itemize
+double soma_x - somatório dos valores de x.
+\end_layout
+
+\begin_layout Itemize
+double soma_y - somatório dos valores de y.
+\end_layout
+
+\begin_layout Itemize
+double soma_xy - somatório dos valores de x*y.
+\end_layout
+
+\begin_layout Itemize
+double soma_xquad - somatório dos valores de 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+double soma_yquad - somatório dos valores de 
+\begin_inset Formula $y^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+std::vector<double> vx - vetor de ordenada x do ponto (x,y).
+\end_layout
+
+\begin_layout Itemize
+std::vector<double> vy - vetor de ordenada y do ponto (x,y).
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Itemize
+double Soma_x() - soma todos os valores contidos no vetor x da classe CRegressao
+Linear.
+\end_layout
+
+\begin_layout Itemize
+double Soma_y() - soma todos os valores contidos no vetor y da classe CRegressao
+Linear.
+\end_layout
+
+\begin_layout Itemize
+double Soma_xy() - soma dos produtos xi * yj, com i = j, percorrendo todos
+ os vetores.
+\end_layout
+
+\begin_layout Itemize
+double Soma_xquad() - somatório do quadrado de cada elemento do vetor x.
+\end_layout
+
+\begin_layout Itemize
+double Soma_yquad() - somatório do quadrado de cada elemento do vetor y.
+\end_layout
+
+\begin_layout Itemize
+void Entrada() - solicita os dados ao usuário.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CSolverRL:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Atributos:
+\end_layout
+
+\begin_layout Itemize
+double a - coeficiente angular.
+\end_layout
+
+\begin_layout Itemize
+double b - coeficiente linear.
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Itemize
+double Calcular_a() - calcula o valor do coeficiente angular da reta.
+\end_layout
+
+\begin_layout Itemize
+double Calcular_b() - calcula o valor do coeficiente linear da reta.
+\end_layout
+
+\begin_layout Itemize
+double CalcularCorrelacao() - calcula a associação numérica entre duas variáveis.
+\end_layout
+
+\begin_layout Itemize
+void ExibirEquacao() - após o cálculo, exibe a equação da reta.
+\end_layout
+
+\begin_layout Itemize
+void PlotarGrafico() - plota um gráfico da reta y = a + bx.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CTesteZmodificado:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Atributos:
+\end_layout
+
+\begin_layout Itemize
+std::vector<double> desvioAbs - vetor que armazena os valores dos desvios
+ absolutos.
+\end_layout
+
+\begin_layout Itemize
+double Zmod - estatística do teste Z modificado.
+\end_layout
+
+\begin_layout Itemize
+double mad - mediana dos desvios absolutos.
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Itemize
+double DesvioAbs() - calcula os desvios absolutos.
+\end_layout
+
+\begin_layout Itemize
+double Mad() - calcula a mediana dos desvios absolutos.
+\end_layout
+
+\begin_layout Itemize
+double Zmod() - calcula os valores de z modificado.
+\end_layout
+
+\begin_layout Itemize
+void ComparaZmod() - compara os valores de z encontrados com os da tabela.
+\end_layout
+
+\begin_layout Itemize
+void Entrada() - solicita os dados ao usuário.
+\end_layout
+
+\begin_layout Itemize
+void Saida() - informa os resultados ao usuário.
+\end_layout
+
+\begin_layout Itemize
+void ExecutarTeste() - executa o teste.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CTesteDoerfeel:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Atributos:
+\end_layout
+
+\begin_layout Itemize
+double valorSuspeito - valor suspeito de ser uma anomalia (
+\shape italic
+outlier
+\shape default
+).
+\end_layout
+
+\begin_layout Itemize
+double valorAdjacente - valor mais próximo do 
+\shape italic
+outlier
+\end_layout
+
+\begin_layout Itemize
+double alpha - nível de significância.
+\end_layout
+
+\begin_layout Itemize
+double q - estatística do teste.
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Itemize
+void OrdenarDados() - método que ordena os dados que são utilizados na classe.
+\end_layout
+
+\begin_layout Itemize
+double DadoAdjacente() - calcula o valor adjacente, mais próximo do outlier.
+\end_layout
+
+\begin_layout Itemize
+double CalcularQ() - calcula a estatística do teste.
+\end_layout
+
+\begin_layout Itemize
+void ComparaTabela() - compara o valor calculado ao da tabela para saber
+ se será aceito ou rejeitado.
+\end_layout
+
+\begin_layout Itemize
+void Entrada() - solicita os dados ao usuário.
+\end_layout
+
+\begin_layout Itemize
+void Saida() - informa os resultados ao usuário.
+\end_layout
+
+\begin_layout Itemize
+void ExecutarTeste() - executa o teste.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CTesteGrubbs:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Atributos:
+\end_layout
+
+\begin_layout Itemize
+double alpha - nível de significância.
+\end_layout
+
+\begin_layout Itemize
+double tau - estatística do teste.
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Itemize
+void OrdenarDados() - método que coloca os dados logtransformados em ordem
+ crescente.
+\end_layout
+
+\begin_layout Itemize
+double CalcularLn_xi() - método que calcula o logaritmo natural.
+\end_layout
+
+\begin_layout Itemize
+double CalcularTau() - cálcula a estatística do teste de Grubbs.
+\end_layout
+
+\begin_layout Itemize
+void ComparaTabela() - compara o valor calculado ao da tabela para saber
+ se será aceito ou rejeitado.
+\end_layout
+
+\begin_layout Itemize
+void Entrada() - solicita os dados ao usuário.
+\end_layout
+
+\begin_layout Itemize
+void Saida() - informa os resultados ao usuário.
+\end_layout
+
+\begin_layout Itemize
+void ExecutarTeste() - executa o teste de Grubbs.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CTesteDixon:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Atributos:
+\end_layout
+
+\begin_layout Itemize
+double alpha - nível de significância.
+\end_layout
+
+\begin_layout Itemize
+double z - estatística do teste de Dixon.
+\end_layout
+
+\begin_layout Itemize
+double z_maior - maior valor de z.
+\end_layout
+
+\begin_layout Itemize
+double z_menor - menor valor de z.
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Itemize
+void OrdenarDados() - método que coloca os dados obtidos em ordem crescente
+\end_layout
+
+\begin_layout Itemize
+double CalcularZ() - calcula a estatística do teste de Dixon
+\end_layout
+
+\begin_layout Itemize
+void ComparaTabela() - compara o valor calculado ao da tabela para saber
+ se será aceito ou rejeitado
+\end_layout
+
+\begin_layout Itemize
+void Entrada() - solicita os dados ao usuário
+\end_layout
+
+\begin_layout Itemize
+void Saida() - informa os resultados ao usuário
+\end_layout
+
+\begin_layout Itemize
+void ExecutarTeste() - executa o teste de Dixon.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CTesteCochran:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Atributos:
+\end_layout
+
+\begin_layout Itemize
+double alpha - nível de significância
+\end_layout
+
+\begin_layout Itemize
+int numeroGrupos - quantidade de grupos de amostras
+\end_layout
+
+\begin_layout Itemize
+std::vector<double> media - armazena a média de cada grupo de amostra
+\end_layout
+
+\begin_layout Itemize
+std::vector<double> variancia - armazena a variância de cada grupo de amostra.
+\end_layout
+
+\begin_layout Itemize
+double maiorVariancia - maior variância.
+\end_layout
+
+\begin_layout Itemize
+double somaVariancias - soma das variâncias.
+\end_layout
+
+\begin_layout Itemize
+double c - estatística do teste Cochran.
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Itemize
+double MaiorVariancia() - encontra um maior valor do vetor variância
+\end_layout
+
+\begin_layout Itemize
+double SomaVariancias() - soma os valores da variância armazenados no vetor
+\end_layout
+
+\begin_layout Itemize
+double CalcularC() - calcular a estatística do teste Cochran
+\end_layout
+
+\begin_layout Itemize
+void ComparaTabela() - compara o valor calculado ao da tabela para saber
+ se será aceito ou rejeitado
+\end_layout
+
+\begin_layout Itemize
+void Entrada() - solicita os dados ao usuário
+\end_layout
+
+\begin_layout Itemize
+void Saida() - informa os resultados ao usuário
+\end_layout
+
+\begin_layout Itemize
+void ExecutarTeste() - executar o teste Cochran
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CEstatística:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Atributos:
+\end_layout
+
+\begin_layout Itemize
+int numeroDados - número de dados utilizados
+\end_layout
+
+\begin_layout Itemize
+std::vector<double> dados - armazena os dados da amostra
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Itemize
+double AmplitudeDados() - calcula a amplitude dos dados (valor máximo -
+ valor mínimo)
+\end_layout
+
+\begin_layout Itemize
+double Media() - calcula a media
+\end_layout
+
+\begin_layout Itemize
+double Mediana() - calcula a mediana
+\end_layout
+
+\begin_layout Itemize
+double Variancia() - calcula a variância
+\end_layout
+
+\begin_layout Itemize
+double DesvioPadrao() - calcula o desvio padrão
+\end_layout
+
+\begin_layout Itemize
+void Entrada() - solicita os dados ao usuário
+\end_layout
+
+\begin_layout Itemize
+void Saida() - informa os resultados ao usuário
+\end_layout
+
+\begin_layout Itemize
+void ExecutarEstatística() - solicita ao usuário a estatística desejada
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CTesteHipotese:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Atributos:
+\end_layout
+
+\begin_layout Itemize
+double mediaPopulacao - valor da média da população
+\end_layout
+
+\begin_layout Itemize
+double alpha - nível de significância
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Itemize
+double CalcularZ() - calcula a estatística do teste de hipótese
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CTesteHipoteseDPdesconhecido:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Atributos:
+\end_layout
+
+\begin_layout Itemize
+int grauLiberdade - número de elementos correspondente -1, característicos
+ da distribuição t
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Itemize
+double CalcularZ() - calcula a estatística do teste de hipótese para um
+ desvio padrão desconhecido
+\end_layout
+
+\begin_layout Itemize
+void Entrada() - solicita os dados ao usuário
+\end_layout
+
+\begin_layout Itemize
+void Saida() - informa os resultados ao usuário
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Classe CTesteHipoteseDPconhecido:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Atributos:
+\end_layout
+
+\begin_layout Itemize
+double sigma - valor do desvio padrão populacional
+\end_layout
+
+\begin_layout Standard
+Métodos:
+\end_layout
+
+\begin_layout Itemize
+double CalcularZ() - calcula a estatística do teste de hipótese para um
+ desvio padrão desconhecido
+\end_layout
+
+\begin_layout Itemize
+void Entrada() - solicita os dados ao usuário
+\end_layout
+
+\begin_layout Itemize
+void Saida() - informa os resultados ao usuário
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+A classe CTesteHipotese é uma classe abstrata e possui o método virtual
+ puro calcularZ().
+ Esta classe é uma classe base que possui como classes derivadas CTesteHipoteseD
+Pconhecido e CTesteHipoteseDPdesconhecido.
+ Para o teste de hipótese será implementado o polimorfismo, onde o usuário
+ poderá escolher o teste de hipótese desejado.
+ Nessa implementação será criado um ponteiro do tipo CTesteHipótese através
+ do qual o programa irá executar o método calcularZ() do teste escolhido
+ em tempo de execução.
+\end_layout
+
+\begin_layout Section
+Diagrama de sequência -- eventos
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Eventos
+\end_layout
+
+\end_inset
+
+ e mensagens
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Mensagens
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de sequência
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:diagrama de sequência"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\emph on
+O diagrama de seqüência enfatiza a troca de eventos e mensagens e sua ordem
+ temporal.
+ Contém informações sobre o fluxo de controle do programa.
+ Costuma ser montado a partir de um diagrama de caso de uso e estabelece
+ o relacionamento dos atores (usuários e sistemas externos) com alguns objetos
+ do sistema.
+ O diagrama de sequência para o caso de uso 
+\begin_inset Quotes eld
+\end_inset
+
+Teste Z Modificado
+\begin_inset Quotes erd
+\end_inset
+
+ está representado na
+\shape default
+\emph default
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-sequencia"
+
+\end_inset
+
+.
+ O usuário cria o objeto CEstatística, chama o método ExecutarEstatística(
+ ), onde o usuário irá dizer qual método deseja executar (Regressão ou teste).
+ Ao selecionar a estatística é criado então um objeto do tipo da estatística
+ selecionada e logo após o método de entrada de CEstatística é chamado.
+ Nesse momento o usuário entra com os dados.
+ Ao finalizar a entrada de dados, a classe CEstatística executa todos os
+ demais métodos, enviando ao final os métodos (AmplitudedeDados(), Media(),
+ Mediana(), Variância, DesvioPadrão() e Saida()).
+ Logo após o método ExecutarTeste() ou ExecutarRegressão() é chamado.
+ Em seguida o método Entrada() da classe teste ou regressão é executada
+ e os atributos próprios dessa classe são solicitados.
+ Posteriormente, o programa executa os métodos referentes a cada classe.
+\end_layout
+
+\begin_layout Subsection
+
+\shape italic
+\emph on
+Diagramas de sequência
+\end_layout
+
+\begin_layout Standard
+Veja o 
+\shape italic
+\emph on
+diagrama de seqüência na
+\shape default
+\emph default
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-sequencia"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Aqui a ênfase é o entendimento da sequência com que as mensagens são trocadas,
+ a ordem temporal.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Sequencia CRegressaoLinear
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/DiagramaSequenciaTesteZModificado.png
+	lyxscale 85
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de seqüência CTesteZmodificado.
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-sequencia"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+deve mostrar uma sequência geral
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/DiagramaSequenciaTesteDoerffel.png
+	scale 45
+	BoundingBox 0bp 0bp 600bp 879bp
+	clip
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Sequência CTesteDoerfeel.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-Sequência"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/DiagramaSequenciaTesteGrubbs.png
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Sequência CTesteGrubbs.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-Sequência-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/DiagramaSequenciaTesteDixon.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Sequência CTesteDixon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/DiagramaSequenciaTesteCochran.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Sequência CTesteCochran
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/DiagramaSequenciaTesteHipoteseDPConhecido.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Sequência CTesteHipoteseDPconhecido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/DiagramaSequenciaTesteHipoteseDPdesconhecido.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Sequência CTesteHipoteseDPdesconhecido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de atividades
+\end_layout
+
+\begin_layout Standard
+.....
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Lembrar que o diagrama de sequência é a representaćão de um método de cálculo
+ específico.
+ Não é para fazer o diagrama de atividades do método de gerenciamento!!!
+\end_layout
+
+\begin_layout Plain Layout
+coloque aqui um diagrama de atividades que mostra contas/cálculos! 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Veja na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-atividades"
+
+\end_inset
+
+ o diagrama de atividades correspondente a uma atividade específica do diagrama
+ de máguina de estado.
+ Observe que....
+\end_layout
+
+\begin_layout Standard
+...descrever em detalhes uma atividade específica..não pode ser a sequência de
+ uso geral, trata-se de um caso específico, detalhado do diagrama de máquina
+ de estado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/DiagramaAtividadeRegressãoLinear.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Atividades CRegressãoLinear
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/Diagrama AtividadeTesteZmodificado.png
+	lyxscale 85
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de atividades.CTesteZmodificado
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-atividades"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/DiagramaAtividadeTesteDoerfeel.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Atividades CTesteDoerfeel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/Diagrama de AtividadeTesteGrubbs.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Atividades CTesteGrubbs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/DiagramaAtividadeTesteDixon.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Atividades CTesteDixon
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/Diagrama de AtividadeTeste Cochran.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Atividades CTesteCochran 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/Diagrama AtividadeTestedeHipoteseDPconhecido.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Atividades CTesteHipoteseDPconhecido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/MárcioLuís/Desktop/9-Modelo-TrabalhoProgramacaoPratica/imagens/Diagrama AtividadeTestehipoteseDpDesconhecido.png
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Diagrama de Atividades CTesteHipoteseDPdesconhecido
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
