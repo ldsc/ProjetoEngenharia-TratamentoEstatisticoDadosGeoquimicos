@@ -1,0 +1,556 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass book
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+\end_preamble
+\use_default_options true
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package %dummy
+\inputencoding iso8859-1
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement ph
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Especificação
+\end_layout
+
+\begin_layout Standard
+Apresenta-se neste capítulo a especificação do sistema a ser modelado e
+ desenvolvido.
+\end_layout
+
+\begin_layout Section
+Especificação do programa - descrição dos requisitos
+\end_layout
+
+\begin_layout Standard
+A elaboração deste modelo foi concebida com o objetivo de apresentar uma
+ abordagem estatística para o tratamento de dados geoquímicos, utilizando
+ técnicas como regressão linear, testes de hipóteses e detecção de valores
+ atípicos (outliers).
+\end_layout
+
+\begin_layout Subsection
+Definições da interface
+\end_layout
+
+\begin_layout Standard
+Devido à sua simplicidade, o software será dotado de uma interface de linha
+ de comando.
+ Adicionalmente, é imprescindível que seja multiplataforma, sendo capaz
+ de executar em sistemas como GNU/Linux, UNIX, Mac OS e Windows.
+\end_layout
+
+\begin_layout Subsection
+Entrada e saída de dados
+\end_layout
+
+\begin_layout Standard
+A entrada e a saída de dados irá depender do tipo de teste selecionado.
+ Para melhor observá-los indica-se a análise dos diagramas.
+ A entrada de dados poderá ser feita via arquivo de disco ou via teclado.
+\end_layout
+
+\begin_layout Section
+Casos de uso
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Casos de uso
+\end_layout
+
+\end_inset
+
+ do Programa
+\end_layout
+
+\begin_layout Standard
+A Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Casos-de-uso"
+
+\end_inset
+
+ mostra a descrição do caso de uso do programa.
+ Estão descritas todas as etapas realizadas no funcionamento do programa.
+ Observe que se o usuário escolher uma opção não correspondente a nenhuma
+ das alternativas para saída do programa (1-Selecionar o teste estatístico,
+ 2-Fornecer os dados geoquímicos, 3-Aplicar o teste, e 4-Analisar resultados),
+ um exemplo de cenário alternativo, a frase 
+\begin_inset Quotes eld
+\end_inset
+
+Opção inválida
+\begin_inset Quotes erd
+\end_inset
+
+ irá aparecer na tela, e o usuário deverá selecionar outra opção.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Casos de uso do programa 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Casos-de-uso"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome do caso de uso:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tratamento estatístico de dados geoquímicos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resumo/descrição:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Escolher um método estátistico para tratar dados geoquímicos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Etapas: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.
+ Selecionar o tratamento estatístico.
+\end_layout
+
+\begin_layout Plain Layout
+2.
+ Fornecer dados geoquímicos.
+\end_layout
+
+\begin_layout Plain Layout
+3.
+ Aplicar o tratamento.
+\end_layout
+
+\begin_layout Plain Layout
+4.
+ Analisar resultados.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cenário Alternativo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Um cenário alternativo envolve uma entrada errada do usuário, escolhendo
+ um número acima de 4 (que não representa nenhuma das opções de saída do
+ programa).
+ Neste caso, a frase 
+\begin_inset Quotes eld
+\end_inset
+
+Opção inválida
+\begin_inset Quotes erd
+\end_inset
+
+ aparece na tela.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de caso de uso geral do programa
+\end_layout
+
+\begin_layout Standard
+O diagrama de caso de uso geral do programa é apresentado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-caso"
+
+\end_inset
+
+.
+ Observe que o ator (o usuário) deve escolher um teste estatístico, e em
+ seguida fornecer os dados que deseja analisar, que será a entrada do programa,
+ contendo os informações geoquímicas, como o exemplo das percentagens de
+ SAT, ARO e NSO.
+ Posteriormente, o usuário deverá então selecionar a opção de aplicar o
+ teste.
+ De posse dos resultados, os mesmos serão analisados e interpretados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Diagrama caso de uso geral.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de caso de uso – Caso de uso geral
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-caso"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de caso de uso específico do programa
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-espe"
+
+\end_inset
+
+ um diagrama de caso de uso específico do programa.
+ Nele está detalhado o caso de uso específico que é 
+\begin_inset Quotes eld
+\end_inset
+
+Testes
+\begin_inset Quotes erd
+\end_inset
+
+ onde um teste deverá ser escolhido para tratar os dados geoquímicos.
+ O usuáro cria um objeto 
+\begin_inset Quotes eld
+\end_inset
+
+Teste
+\begin_inset Quotes erd
+\end_inset
+
+ e informa ao sistema os dados geoquímicos e o nível de significância, posterior
+mente é solicitada a realização do teste através do caso de uso 
+\begin_inset Quotes eld
+\end_inset
+
+Realizar Teste
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Os resultados são então gerados e informados ao usuário para que o mesmo
+ possa analisá-lo.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename WhatsApp Image 2023-12-01 at 20.55.52.jpeg
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de caso de uso específico – Detalhamento dos testes a serem utilizados
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Já para o caso de uso específico 
+\begin_inset Quotes eld
+\end_inset
+
+Regressão Linear
+\begin_inset Quotes erd
+\end_inset
+
+, o objeto é criado e o usuário deve fornercer os valores de x e y.
+ O sistema então retorna o coeficiente de correlação e a regressão linear
+ ao usuário, o que pode ser melhor visualizado através de um gráfico plotado
+ no 
+\family typewriter
+gnuplot
+\family default
+.
+ Com isso, o usuário pode então analisar os resultados.
+ O diagrama de caso de uso específico 
+\begin_inset Quotes eld
+\end_inset
+
+Regressão Linear
+\begin_inset Quotes erd
+\end_inset
+
+ é apresentado na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-caso-uso-Regressao-Linear"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename WhatsApp Image 2023-12-01 at 20.50.07.jpeg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de caso de uso específico – Detalhamento da regressão linear
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
