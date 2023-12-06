@@ -102,26 +102,6 @@ name "cha:Introdução"
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lhead{
-\backslash
-thechapter
-\backslash
-space - Introdução}
-\backslash
-rhead{}
-\backslash
-pagenumbering{arabic}
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -548,6 +528,10 @@ name "sec:Objetivos"
 
 \end_layout
 
+\begin_layout Subsection
+Objetivo geral
+\end_layout
+
 \begin_layout Standard
 O objetivo geral do 
 \shape italic
@@ -565,6 +549,16 @@ outliers
  são aplicados em dados geoquímicos.
 \end_layout
 
+\begin_layout Subsection
+Objetivos específicos
+\end_layout
+
+\begin_layout Standard
+O objetivo específico do software é excluir outliers existentes nos dados
+ a serem analisado, fazendo com que ocorra o Tratamento de dados com a utilizaçã
+o de Métodos Geoquímicos.
+\end_layout
+
 \begin_layout Section
 Organização do Documento
 \end_layout
@@ -576,10 +570,6 @@ O presente documento está organizado como uma apostila, contendo a Especificaç
  , a Análise Orientada a Objeto (AOO), a Implementação, os Testes e a Documentaç
 ão.
  
-\end_layout
-
-\begin_layout Standard
-
 \end_layout
 
 \end_body

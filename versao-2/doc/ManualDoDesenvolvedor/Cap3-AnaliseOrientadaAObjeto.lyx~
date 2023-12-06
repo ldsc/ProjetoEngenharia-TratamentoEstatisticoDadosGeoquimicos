@@ -195,8 +195,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/DiagramaDeClasse.png
-	width 100text%
-	rotateAngle 90
 
 \end_inset
 
@@ -2048,8 +2046,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaSequenciaGrubbs.png
-	width 100text%
+	filename teste grubbs.png
+	scale 50
 
 \end_inset
 
@@ -2125,6 +2123,10 @@ name "fig:DiagramaSequenciaTesteDixon"
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -2172,6 +2174,10 @@ name "fig:DiagramaSequenciaTesteCochran"
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -2225,6 +2231,10 @@ name "fig:DiagramaSequenciaHipoteseDpConhec."
 
 \end_layout
 
+\begin_layout Plain Layout
+
+\end_layout
+
 \end_inset
 
 
@@ -2252,7 +2262,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/DiagramaSequenciaHipoteseDpDesc.png
-	width 100text%
+	width 100cm
 
 \end_inset
 
@@ -2317,8 +2327,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaSequenciaKolmogorov.png
-	width 100text%
+	filename WhatsApp Image 2023-12-01 at 22.21.10 (2).jpeg
 
 \end_inset
 
@@ -2400,6 +2409,10 @@ Diagram de Sequência classe CTesteKruskalWallis
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 

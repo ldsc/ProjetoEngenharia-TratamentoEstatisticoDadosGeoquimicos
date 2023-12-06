@@ -132,10 +132,10 @@ Apresenta-se neste capítulo os ciclos de planejamento/detalhamento para
 \end_layout
 
 \begin_layout Section
-Versão 0.1
+Versão 1
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Versão-0.1"
+name "sec:Versão-1"
 
 \end_inset
 
@@ -223,10 +223,10 @@ name "fig:Versão-0.1 - simples"
 \end_layout
 
 \begin_layout Section
-Versão 0.2
+Versão 2
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Versão-0.2"
+name "sec:Versão-2"
 
 \end_inset
 

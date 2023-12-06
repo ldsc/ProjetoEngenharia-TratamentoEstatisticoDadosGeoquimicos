@@ -92,7 +92,7 @@
 \begin_body
 
 \begin_layout Chapter
-Especificação
+Especificação/Concepção
 \end_layout
 
 \begin_layout Standard
@@ -135,7 +135,7 @@ A entrada e a saída de dados irá depender do tipo de teste selecionado.
 \begin_layout Section
 Casos de uso
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Casos de uso
@@ -405,7 +405,10 @@ Diagrama de caso de uso específico do programa
 Apresenta-se na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Diagrama-de-espe"
+reference "fig:DiagramaCasoDeUsoEspTeste"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -451,7 +454,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaCasoDeUsoGeral.png
+	filename imagens/DiagramaCasoDeUsoEspTeste.png
 	width 100text%
 	rotateOrigin center
 
@@ -507,7 +510,10 @@ Regressão Linear
  é apresentado na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Diagrama-de-caso-uso-Regressao-Linear"
+reference "fig:DIagramaCasoDeUsoEspecREgressaoLinear"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
@@ -546,8 +552,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Diagrama Caso de Uso Especifico- Regressão Linear.png
-	scale 70
+	filename imagens/DIagramaCasoDeUsoEspecREgressaoLinear.png
+	width 100text%
 
 \end_inset
 

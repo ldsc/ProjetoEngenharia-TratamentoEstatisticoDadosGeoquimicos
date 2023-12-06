@@ -184,7 +184,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-Simulador-Transcal-Guilherme1.png
+	filename ../../../versao-1/doc/ManualDoDesenvolvedor/imagens/Interface-Simulador-Transcal-Guilherme1.png
 	lyxscale 60
 	width 100text%
 
@@ -247,7 +247,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/Interface-Simulador-Transcal-Guilherme2.png
+	filename ../../../versao-1/doc/ManualDoDesenvolvedor/imagens/Interface-Simulador-Transcal-Guilherme2.png
 	lyxscale 60
 	width 100text%
 

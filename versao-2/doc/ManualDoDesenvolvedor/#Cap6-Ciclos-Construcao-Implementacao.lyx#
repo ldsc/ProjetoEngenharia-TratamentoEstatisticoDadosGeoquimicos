@@ -286,10 +286,6 @@ Implementação
 status open
 
 \begin_layout Plain Layout
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
 Nota importante: as listagens, arquivos .h .cpp, devem ser salvas usando formato
  ISO 8859-1, que é um formato internacional para línguas latinas (o que
  inclui o portugues).
@@ -307,7 +303,7 @@ Se o arquivo já existe, você pode mudar a codificação no Kate/Gedit indo
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Apresenta-se a seguir um conjunto de classes (arquivos .h e .cpp) além do
  programa 
 \family typewriter
@@ -316,7 +312,7 @@ main
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Apresenta-se na listagem 
 \begin_inset ERT
 status open
@@ -350,7 +346,7 @@ CSimulador-nome
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -361,7 +357,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimulador-nome},
- label={CSimulador-nome.h}] {../../../src/CSimulador-nome.h}
+ label={CSimulador-nome.h}] {../../src/CSimulador-nome.h}
 \end_layout
 
 \end_inset
@@ -369,7 +365,7 @@ lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimulador-nome},
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Apresenta-se na listagem 
 \begin_inset ERT
 status open
@@ -391,7 +387,7 @@ CAplicacao
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -402,7 +398,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CSimulador-nome},
- label={CSimulador-nome.cpp}] {../../../src/CSimulador-nome.cpp}
+ label={CSimulador-nome.cpp}] {../../src/CSimulador-nome.cpp}
 \end_layout
 
 \end_inset
@@ -410,7 +406,7 @@ lstinputlisting[ caption={Arquivo de implementação da classe CSimulador-nome},
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Apresenta-se na listagem 
 \begin_inset ERT
 status open
@@ -432,7 +428,7 @@ CSimulador-nome
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -449,7 +445,7 @@ lstinputlisting[ caption={
 
 Arquivo de implementação da função 
 \backslash
-texttt{main()}}, label={Simulador-nome.cpp}] {../../../src/Simulador-nome.cpp}
+texttt{main()}}, label={Simulador-nome.cpp}] {../../src/Simulador-nome.cpp}
 \end_layout
 
 \end_inset
@@ -457,7 +453,7 @@ texttt{main()}}, label={Simulador-nome.cpp}] {../../../src/Simulador-nome.cpp}
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -471,7 +467,7 @@ note que para saída mudamos a cor de fundo para azul; geramos a saída e
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -481,12 +477,7 @@ status open
 \backslash
 lstset{style=out}   
 \backslash
-lstinputlisting[caption=] {../../../src/Simulador-nome.out}
-\end_layout
-
-\end_inset
-
-
+lstinputlisting[caption=] {../../versao-1/src/Simulador-nome.out}
 \end_layout
 
 \end_inset

@@ -106,20 +106,28 @@
 \begin_body
 
 \begin_layout Chapter
-Ciclos de Planejamento/Detalhamento
-\begin_inset Index idx
+Teste
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Teste"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-Ciclos de Planejamento/Detalhamento
+
+
+\backslash
+lhead{
+\backslash
+thechapter - Teste} 
 \end_layout
-
-\end_inset
-
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "chap: Ciclos de Planejamento/Detalhamento"
 
 \end_inset
 
@@ -127,114 +135,58 @@ name "chap: Ciclos de Planejamento/Detalhamento"
 \end_layout
 
 \begin_layout Standard
-Apresenta-se neste capítulo os ciclos de planejamento/detalhamento para
- as diferentes versões desenvolvidas.
+Todo projeto de engenharia passa por uma etapa de testes.
+ Neste capítulo apresentamos alguns testes do software desenvolvido.
+ Estes testes devem dar resposta aos diagramas de caso de uso inicialmente
+ apresentados (diagramas de caso de uso geral e específicos).
 \end_layout
 
 \begin_layout Section
-Versão 1
+Teste 1
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Versão-1"
+name "sec:Teste-1"
 
 \end_inset
 
- - xxx
+: Descrição
 \end_layout
 
 \begin_layout Standard
-Na primeira versão foi 
-\shape italic
-...
+No início apresente texto explicativo do teste:
+\end_layout
+
+\begin_layout Itemize
+O que esta sendo testado?
+\end_layout
+
+\begin_layout Itemize
+Como o teste vai ser realizado?
+\end_layout
+
+\begin_layout Itemize
+Como o programa será validado?
+\end_layout
+
+\begin_layout Itemize
+Resultados e análises
 \end_layout
 
 \begin_layout Standard
-Note que é um 
-\shape italic
-software
-\shape default
- simples, .
+A seguir apresente texto explicando a sequência do teste e imagens do programa
+ (captura de tela).
+\end_layout
+
+\begin_layout Standard
+coloque aqui texto falando do diagrama de pacotes, referencie a figura.
  Veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Versão-0.1 - simples"
-plural "false"
-caps "false"
-noprefix "false"
+reference "fig:Teste-TelaPrograma-Captura1"
 
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-na figura a interface de simulador desenvolvido pelo aluno Guilherme
-\end_layout
-
-\end_inset
-
-
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/Interface-Simulador-Transcal-Guilherme1.png
-	lyxscale 60
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Versão 0.1, 
-\shape italic
-\emph on
-imagem do programa rodando
-\emph default
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Versão-0.1 - simples"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Versão 2
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Versão-2"
-
-\end_inset
-
- - xxx
-\end_layout
-
-\begin_layout Standard
-Nesta segunda versão ...
 \end_layout
 
 \begin_layout Standard
@@ -248,7 +200,6 @@ status open
 \align center
 \begin_inset Graphics
 	filename imagens/Interface-Simulador-Transcal-Guilherme2.png
-	lyxscale 60
 	width 100text%
 
 \end_inset
@@ -260,15 +211,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Versão 0.2, 
-\shape italic
-\emph on
-imagem do programa rodando
-\emph default
-
+Tela do programa mostrando xxx
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Versão-0.1 - simples-1"
+name "fig:Teste-TelaPrograma-Captura1"
 
 \end_inset
 
@@ -278,6 +224,223 @@ name "fig:Versão-0.1 - simples-1"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 2
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Teste-2"
+
+\end_inset
+
+: Descrição
+\end_layout
+
+\begin_layout Standard
+No início apresente texto explicativo do teste:
+\end_layout
+
+\begin_layout Itemize
+O que esta sendo testado?
+\end_layout
+
+\begin_layout Itemize
+Como o teste vai ser realizado?
+\end_layout
+
+\begin_layout Itemize
+Como o programa será validado?
+\end_layout
+
+\begin_layout Itemize
+Resultados e análises
+\end_layout
+
+\begin_layout Standard
+A seguir apresente texto explicando a sequência do teste e imagens do programa
+ (captura de tela).
+\end_layout
+
+\begin_layout Standard
+Coloque aqui texto falando do diagrama de pacotes, referencie a figura.
+ Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-1"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Na Figura simulador desenvolvido pelo aluno Tiago Schauwer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Interface-Simulador-Tiago.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando xxx
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 3
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Teste-3"
+
+\end_inset
+
+: Descrição
+\end_layout
+
+\begin_layout Standard
+No início apresente texto explicativo do teste:
+\end_layout
+
+\begin_layout Itemize
+O que esta sendo testado?
+\end_layout
+
+\begin_layout Itemize
+Como o teste vai ser realizado?
+\end_layout
+
+\begin_layout Itemize
+Como o programa será validado?
+\end_layout
+
+\begin_layout Itemize
+Resultados e análises
+\end_layout
+
+\begin_layout Standard
+A seguir apresente texto explicando a sequência do teste e imagens do programa
+ (captura de tela).
+\end_layout
+
+\begin_layout Standard
+coloque aqui texto falando do diagrama de pacotes, referencie a figura.
+ Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura1-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Interface-SimuladorTranscal-Nicholas.png
+	lyxscale 25
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando xxx
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura1-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Nota: 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Não perca de vista a visão do todo; do projeto de engenharia como um todo.
+ Cada capítulo, cada seção, cada parágrafo deve se encaixar.
+ Este é um diferencial fundamental do engenheiro em relação ao técnico,
+ a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
+ de modelar processos/sistemas/produtos de engenharia.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+apague!
 \end_layout
 
 \end_inset
