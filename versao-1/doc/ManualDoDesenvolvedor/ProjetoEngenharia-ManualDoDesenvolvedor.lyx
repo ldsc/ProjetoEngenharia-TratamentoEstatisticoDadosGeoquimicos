@@ -127,13 +127,6 @@
 \align block
 \begin_inset CommandInset include
 LatexCommand include
-filename "Base.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand include
 filename "Cap0-Capa-ProjetoDisciplina.lyx"
 
 \end_inset
@@ -143,7 +136,7 @@ filename "Cap0-Capa-ProjetoDisciplina.lyx"
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Este documento usa modelo de documento: Livro padrão extendido do latex,
@@ -237,7 +230,7 @@ usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]
 \begin_layout Standard
 \align block
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align block
@@ -298,7 +291,7 @@ LatexCommand lstlistoflistings
 \begin_layout Standard
 \align block
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align block
@@ -323,7 +316,7 @@ Adicione um resumo/abstract se for seu TCC
 \begin_layout Standard
 \align block
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 NOTA IMPORTANTE:
@@ -476,7 +469,7 @@ options "apalike"
 \begin_layout Standard
 \align block
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 os arquivos a seguir contém informações para ajudar quem esta fazendo o

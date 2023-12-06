@@ -127,18 +127,7 @@
 \align block
 \begin_inset CommandInset include
 LatexCommand include
-filename "Cap0-Base.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap0-Capa.lyx"
+filename "Cap0-Capa-ProjetoDisciplina.lyx"
 
 \end_inset
 
@@ -147,7 +136,7 @@ filename "Cap0-Capa.lyx"
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Este documento usa modelo de documento: Livro padrão extendido do latex,
@@ -241,7 +230,7 @@ usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]
 \begin_layout Standard
 \align block
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align block
@@ -302,7 +291,7 @@ LatexCommand lstlistoflistings
 \begin_layout Standard
 \align block
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align block
@@ -327,7 +316,7 @@ Adicione um resumo/abstract se for seu TCC
 \begin_layout Standard
 \align block
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 NOTA IMPORTANTE:
@@ -345,64 +334,6 @@ No caso do trabalho ser feito por equipe considere que:
 - Cada aluno deverá ser responsável pelo desenvolvimento de pelo menos 5
  classes; sendo que na defesa oral deverá informar quais as 5 classes que
  desenvolveu;
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Cap0-Base.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap0-Capa.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap0-Introducao-Escopo-Objetivos-Metodologia.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap1-Concepcao.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap2-Elaboracao.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap3-AnaliseOrientadaAObjeto.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap4-Projeto.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap5-Ciclos-Planejamento-Detalhamento.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap6-Ciclos-Construcao-Implementacao.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap7-Teste.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap8-DocumentacaoDoDesenvolvedor.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap-Apendice-A.lyx
-\end_layout
-
-\begin_layout Plain Layout
-Cap-Apendice-B.lyx
 \end_layout
 
 \end_inset

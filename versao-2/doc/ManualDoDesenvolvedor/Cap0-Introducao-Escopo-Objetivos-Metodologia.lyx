@@ -4,18 +4,33 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass book
+\textclass extbook
 \begin_preamble
 \usepackage {graphicx}
 \usepackage {longtable}
 \usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
 \end_preamble
 \use_default_options false
 \master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
 \maintain_unincluded_children false
 \language brazilian
-\language_package default
-\inputencoding iso8859-1
+\language_package auto
+\inputencoding auto
 \fontencoding global
 \font_roman "default" "default"
 \font_sans "default" "default"
@@ -52,7 +67,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style plain
+\biblio_style apalike
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -115,8 +130,6 @@ thechapter
 \backslash
 space - Introdução}
 \backslash
-rhead{}
-\backslash
 pagenumbering{arabic}
 \end_layout
 
@@ -126,15 +139,66 @@ pagenumbering{arabic}
 \end_layout
 
 \begin_layout Standard
-Os métodos estatísticos são utilizados no processamento de informações,
- visando explorar conjuntos numéricos e derivar conclusões valiosas a partir
- deles.
- Essas técnicas envolvem a análise e interpretação de dados para oferecer
- insights significativos e embasar decisões informadas.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{SeuNomeAqui} 
+\backslash
+rfoot{
+\backslash
+today}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Substitua "SeuNomeAqui" por seu nome e sobrenome
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Jamais retire o 
+\backslash
+today ele vai colocar data no material impresso
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No presente projeto de engenharia desenvolve-se o software XXXX, um software
+ aplicado a engenharia de petróleo e que utiliza o paradigma da orientação
+ a objetos.
+\end_layout
+
+\begin_layout Itemize
+O primeiro parágrafo da introdução pode ser um super resumo do trabalho.
+ A ideia é fazer um resumo do resumo.
+\end_layout
+
+\begin_layout Itemize
+ESTE MODELO TEM TEXTOS EXPLICATVOS QUE DEVEM SER ELIMINADOS DA VERSÃO FINAL.
+ O OBJETIVO DE COLOCAR AS EXPLICAÇÕES É FACILITAR O ENTENDIMENTO DO QUE
+ DEVE ENTRAR EM CADA SEÇÃO.
 \end_layout
 
 \begin_layout Section
-Escopo do Problema
+Escopo do problema
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Escopo-do-Problema"
@@ -145,400 +209,34 @@ name "sec:Escopo-do-Problema"
 \end_layout
 
 \begin_layout Standard
-\paragraph_spacing onehalf
-Em experimentos de geoquímica de laboratório, é comum notar que certas amostras
- se destacam com valores diferentes das demais.
- Para ilustrar esse fenômeno, podemos considerar as percentagens das frações
- NSO
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Compostos NSO são compostos do petróleo que contém átomos de nitrogênio,
- enxofre e oxigênio em sua estrutura molecular.
-\end_layout
-
-\end_inset
-
-, saturados
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Hidrocarbonetos que possuem apenas ligações simples entre os átomos de carbono
- de sua estrutura.
-\end_layout
-
-\end_inset
-
- e aromáticos 
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-Hidrocarbonetos que possuem o anel benzênico em sua estrutura molecular.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-No laboratório tem 
-\shape italic
-n
-\shape default
- pesquisadores que utilizam a amostra 09, por exemplo, para calcular suas
- percentagens de saturados, aromáticos e NSO.
- É de se saber que cada pesquisador pode encontrar valores diferentes destas
- percentagens para essa mesma amostra.
- Esses valores normalmente variam pouco de experimento para experimento,
- mas existem casos em que a percentagem sofre uma considerável variação
- (Tabela 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Percentagens-de-SAT,"
-
-\end_inset
-
-).
+Segundo o CREA/CONFEA um dos quesitos fundamentais que diferenciam a atuação
+ de um tecnólogo da atuação de um engenheiro é a capacidade de desenvolver
+ um projeto em engenharia; Neste trabalho, desenvolve-se um projeto em engenhari
+a de software aplicado a solução de um problema específico de engenharia
+ de petróleo.
+ Trabalhando-se com todo ciclo de um projeto, isto é, especificação, elaboração,
+ análise, projeto, desenvolvimento, teste e documentação.
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset Float table
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Percentagens de SAT, ARO e NSO para a amostra 09.
- 
-\begin_inset CommandInset label
-LatexCommand label
-name "tab:Percentagens-de-SAT,"
-
-\end_inset
-
-
+\begin_layout Itemize
+Definir o escopo do projeto de engenharia, a ideia geral do software, acentuar
+ sua importância, usos e aplicações em engenharia [de petróleo].
 \end_layout
 
-\end_inset
-
-
+\begin_layout Itemize
+Delimitar o assunto.
+ Situá-lo no tempo e no espaço.
+ Situá-lo em relação a outros softwares.
 \end_layout
 
-\begin_layout Plain Layout
-\align center
-\begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="4">
-<features tabularvalignment="middle">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Pesquisador
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-% SAT 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-% ARO 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-% NSO
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Fernanda 
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-50
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Hilda
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-47
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-23
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-30
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Laercio
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-52
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-25
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-23
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Mateus
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-10
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-70
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Natieli
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-55
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-25
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-20
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Conforme indicado na tabela 1.1, as percentagens calculadas pelo pesquisador
- Mateus diferem significativamente das encontradas pelos outros pesquisadores
- para as frações SAT e ARO.
- Esses valores são considerados atípicos, e para confirmar essa suspeita,
- são realizados testes como o Teste do escore z modificado, Teste de Grubbs,
- Teste de Dixon, Teste de Cochran e Teste de Doerffel.
-\end_layout
-
-\begin_layout Standard
-Em estatística, um outlier, ou valor atípico, refere-se a uma observação
- que se distancia consideravelmente das demais na série, sendo inconsistente
- ou "fora do padrão".
- A presença de outliers geralmente prejudica a interpretação dos resultados
- dos testes estatísticos aplicados às amostras.
- Em resumo, um outlier é uma observação que se desvia notavelmente das demais,
- levantando suspeitas de que pode ter sido influenciado por um mecanismo
- diferente.
-\end_layout
-
-\begin_layout Standard
-A determinação de 
-\shape italic
-outliers
-\shape default
-, por exemplo, pode indicar processos geoquímicos raros (como mineralizações),
- que pode ser usado para exploração de hidrocarbonetos.
- De um modo geral eliminam-se os 
-\shape italic
-outliers
-\shape default
- quando eles representam erros claros, mas frequentemente eles representam
- irregularidades interessantes que merecem um estudo mais detalhado.
- Na verdade para alguns conjuntos de dados, os 
-\shape italic
-outliers
-\shape default
- são a característica mais importante.
- A identificação de valores pertencentes a um conjunto de dados que possam
- ser caracterizados como 
-\shape italic
-outliers
-\shape default
-, bem como o tratamento que se deve dar a eles é tema importante no tratamento
- estatístico de dados.
- A regressão linear pode ser usada por exemplo para a determinação do gradiente
- térmico (variação da temperatura com a profundidade) e seria de grande
- importância para a determinação de temperaturas em rochas geradoras e reservató
-rios.
+\begin_layout Itemize
+Neste capítulo podem entrar figuras que ilustram a ideia geral, o detalhamento
+ será feito depois, na elaboração.
 \end_layout
 
 \begin_layout Section
-Objetivo
+Objetivos
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Objetivos"
@@ -548,48 +246,175 @@ name "sec:Objetivos"
 
 \end_layout
 
-\begin_layout Subsection
-Objetivo geral
-\end_layout
-
 \begin_layout Standard
-O objetivo geral do 
-\shape italic
-software
-\shape default
- é propor uma série de tratamentos estatísticos como a regressão linear
- e os testes de hipóteses, bem como alguns testes que identificam valores
- irregulares (
-\shape italic
-outliers
-\shape default
-).Este trabalho implementa alguns testes que identificam, que são: Teste
- do escore z modificado, Teste de Grubbs, Teste de Dixon, Teste de Cochran
- e Teste de Doerffel , além de testes de hipóteses e regressão linear que
- são aplicados em dados geoquímicos.
+Os objetivos deste projeto de engenharia são:
 \end_layout
 
-\begin_layout Subsection
-Objetivos específicos
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
-O objetivo específico do software é excluir outliers existentes nos dados
- a serem analisado, fazendo com que ocorra o Tratamento de dados com a utilizaçã
-o de Métodos Geoquímicos.
+\begin_deeper
+\begin_layout Itemize
+Descreva aqui o objetivo geral do projeto de engenharia, incluindo vínculos
+ com engenharia de petróleo e com modelagem matemática computacional (ideia
+ de lógica, algoritmos,...).
 \end_layout
 
+\begin_layout Itemize
+Desenvolver um projeto de engenharia de software para ...[.....descrever de forma
+ clara, direta, objetiva, o objetivo geral do software].
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Modelar física e matematicamente o problema.
+\end_layout
+
+\begin_layout Itemize
+Modelagem estática do software (diagramas de caso de uso, de pacotes, de
+ classes).
+\end_layout
+
+\begin_layout Itemize
+Modelagem dinâmica do software (desenvolver algoritmos e diagramas exemplificand
+o os fluxos de processamento).
+\end_layout
+
+\begin_layout Itemize
+Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
+o, cada parte do software].
+\end_layout
+
+\begin_layout Itemize
+Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
+o, cada parte do software].
+\end_layout
+
+\begin_layout Itemize
+Simular (realizar simulações para teste do software desenvolvido).
+\end_layout
+
+\begin_layout Itemize
+Implementar manual simplificado de uso do software.
+\end_layout
+
+\end_deeper
 \begin_layout Section
-Organização do Documento
+Metodologia utilizada
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Metodologia-utilizada"
+
+\end_inset
+
+
+\begin_inset Index idx
+status open
+
+\begin_layout Plain Layout
+Metodologia utilizada
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-O presente documento está organizado como uma apostila, contendo a Especificação
-, a Elaboração onde também uma teoria básica, para melhor compreensão do
- programa, e o passo a passo da utilização do mesmo.
- , a Análise Orientada a Objeto (AOO), a Implementação, os Testes e a Documentaç
-ão.
- 
+O software a ser desenvolvido utiliza a metodologia de engenharia de software
+ apresentada pelo Prof.
+ André Bueno na disciplina de programação e ilustrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Etapas para o desenvolvimento do software"
+
+\end_inset
+
+.
+ Note que o 
+\begin_inset Quotes eld
+\end_inset
+
+Ciclo de Concepção e Análise
+\begin_inset Quotes erd
+\end_inset
+
+ é composto por diversas partes representadas neste trabalho em diferentes
+ capítulos.
+ Os ciclos de planejamento/detalhamento tem seu próprio capítulo, assim
+ como o ciclo de construção - implementação.
+\end_layout
+
+\begin_layout Standard
+Esta metodologia é utilizada nas disciplinas:
+\end_layout
+
+\begin_layout Itemize
+LEP01447 : Programação Orientada a Objeto em C++.
+\end_layout
+
+\begin_layout Itemize
+LEP01446 : Programação Prática.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/EngenhariaSoftware-Geral.png
+	lyxscale 25
+	width 100text%
+	height 85theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Etapas para o desenvolvimento do software
+\shape italic
+ - projeto de engenharia
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Etapas para o desenvolvimento do software"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

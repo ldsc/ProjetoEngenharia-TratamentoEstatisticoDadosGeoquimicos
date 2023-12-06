@@ -132,10 +132,10 @@ Apresenta-se neste capítulo os ciclos de planejamento/detalhamento para
 \end_layout
 
 \begin_layout Section
-Versão 1
+Versão 0.1
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Versão-1"
+name "sec:Versão-0.1"
 
 \end_inset
 
@@ -157,7 +157,7 @@ software
  Veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Versão-1"
+reference "fig:Versão-0.1 - simples"
 plural "false"
 caps "false"
 noprefix "false"
@@ -197,7 +197,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Versão 1, 
+Versão 0.1, 
 \shape italic
 \emph on
 imagem do programa rodando
@@ -205,7 +205,7 @@ imagem do programa rodando
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Versão-1"
+name "fig:Versão-0.1 - simples"
 
 \end_inset
 
@@ -223,10 +223,10 @@ name "fig:Versão-1"
 \end_layout
 
 \begin_layout Section
-Versão 2
+Versão 0.2
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Versão-2"
+name "sec:Versão-0.2"
 
 \end_inset
 
@@ -260,7 +260,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Versão 2, 
+Versão 0.2, 
 \shape italic
 \emph on
 imagem do programa rodando
@@ -268,70 +268,7 @@ imagem do programa rodando
 
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Versão-2"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Versão 3
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:Versão-3"
-
-\end_inset
-
- - xxx
-\end_layout
-
-\begin_layout Standard
-Nesta segunda versão ...
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/Interface-Simulador-Transcal-Guilherme2.png
-	lyxscale 60
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Versão 3, 
-\shape italic
-\emph on
-imagem do programa rodando
-\emph default
-
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Versão-3"
+name "fig:Versão-0.1 - simples-1"
 
 \end_inset
 

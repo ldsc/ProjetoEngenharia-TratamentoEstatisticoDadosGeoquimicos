@@ -132,10 +132,10 @@ Apresenta-se neste capítulo os ciclos de planejamento/detalhamento para
 \end_layout
 
 \begin_layout Section
-Versão 1
+Versão 0.1
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Versão-1"
+name "sec:Versão-0.1"
 
 \end_inset
 
@@ -184,7 +184,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../versao-1/doc/ManualDoDesenvolvedor/imagens/Interface-Simulador-Transcal-Guilherme1.png
+	filename imagens/Interface-Simulador-Transcal-Guilherme1.png
 	lyxscale 60
 	width 100text%
 
@@ -223,10 +223,10 @@ name "fig:Versão-0.1 - simples"
 \end_layout
 
 \begin_layout Section
-Versão 2
+Versão 0.2
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Versão-2"
+name "sec:Versão-0.2"
 
 \end_inset
 
@@ -247,7 +247,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../versao-1/doc/ManualDoDesenvolvedor/imagens/Interface-Simulador-Transcal-Guilherme2.png
+	filename imagens/Interface-Simulador-Transcal-Guilherme2.png
 	lyxscale 60
 	width 100text%
 
